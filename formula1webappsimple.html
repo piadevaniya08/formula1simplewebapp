@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1🏎️</title>
+</head>
+<style>
+   div {
+        display: block;
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 20px;
+        border-radius: 10px;
+        background: radial-gradient(1029px at 0.1% 1.5%, rgba(252, 15, 15, 0.51) 0%, rgba(252, 180, 24, 0.54) 14.7%, rgba(255, 253, 26, 0.53) 29.7%, rgba(85, 255, 18, 0.53) 47.1%, rgba(16, 215, 255, 0.53) 67.8%, rgba(130, 10, 255, 0.51) 86.7%, rgba(255, 22, 181, 0.53) 99.9%);
+   }
+  h1 {
+    text-shadow: 5px 5px 10px rgba(229, 16, 245, 0.4);
+    color: blueviolet;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 300;
+  }
+  h2{
+    color: #F70100;
+    border: 1px solid #F70100;
+    padding:20px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: 200;
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius:10px;
+
+
+  }
+  p{
+    text-align: center;
+    line-height:1.5;
+    font-size:17px;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  button{
+   color:black;
+   background-color:#FF7E08;
+   font-size: 16px;
+   border:none;
+   border-radius: 6px;
+   padding: 16px 24px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transition:all 200ms ease-in-out;
+  }
+ button:hover{
+  color:black;
+  background-color: white;
+  opacity: 0.9;
+  cursor: pointer;
+ }
+.learn-more{
+display:block;
+text-align: center;
+margin-top:10px;
+text-decoration:none;
+color: #F70100;
+}
+
+.learn-more:hover{
+text-decoration:underline;
+}
+.footer{
+  text-align:center;
+  color:black;
+ 
+}
+
+.container{
+  max-width: 600px;
+  margin: 0 auto;
+  padding:15px 60px;
+}
+  
+    </style>
+
+<body>
+  <div class="container">
+    <h1>
+        I Love Motorsport
+    </h1>
+    <h2>
+        Especially Formula 1
+    </h2>
+    
+    <img 
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/137/186/original/Race-start-Japan.jpg?1722782276"
+    width="500" 
+    />
+    
+    <p>
+      Formula One, commonly known as Formula 1 or F1, is the highest class of international racing for open-wheel single-seater formula racing cars sanctioned by the Fédération Internationale de l'Automobile.
+    </p>
+  
+    <a href="https://www.formula1.com/"
+    target="_blank" 
+    class="learn-more"
+    >
+    Learn more on formula1.com
+    
+  </a>
+      
+    
+
+ <button>
+  👉Buy F1 grand prix tickets🏎️
+ </button>
+ <br/>
+ <p class="footer">
+  This page was built by Pia Devaniya Manickum
+ </p>
+ 
+  </body>
+</div>
+<script>
+  function buy() {
+  let name=prompt("what is your name?");
+  let email=prompt("What is your email address?");
+  let emoji=prompt("What is your favourite emoji?");
+  alert( "Thank you,"+
+  name +
+  "! We'll be in touch by email, meanwhile have fun watching F1!" +
+  emoji
+);
+  }
+  let buyButton=document.querySelector("button");
+  buyButton.addEventListener("click", buy);
+</script>
+</html>
